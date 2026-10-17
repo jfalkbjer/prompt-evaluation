@@ -1,0 +1,218 @@
+[
+  {
+    "id": "ph-01",
+    "style": "short_chat",
+    "tricky": true,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "government id replaced by xxxx",
+    "text": "My governmentid is xxxx"
+  },
+  {
+    "id": "ph-02",
+    "style": "short_chat",
+    "tricky": true,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "personnummer written as a template of X",
+    "text": "Mitt personnummer är XXXXXX-XXXX"
+  },
+  {
+    "id": "ph-03",
+    "style": "email",
+    "tricky": true,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "passport number redacted",
+    "text": "Hej,\n\nMitt passnummer är [REDACTED] enligt er blankett. Räcker det för att höja limiten?\n\nMvh"
+  },
+  {
+    "id": "ph-04",
+    "style": "json_tool",
+    "tricky": true,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "card number field of X",
+    "text": "{\"tool\":\"block_card\",\"pan\":\"XXXX XXXX XXXX XXXX\",\"reason\":\"lost\"}"
+  },
+  {
+    "id": "ph-05",
+    "style": "case_note",
+    "tricky": true,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "unfilled personnummer template",
+    "text": "Kunden uppgav personnummer <personnummer> i formuläret. Fältet var en mall och fylldes aldrig i."
+  },
+  {
+    "id": "ph-06",
+    "style": "mixed",
+    "tricky": true,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "refuses to give a personnummer",
+    "text": "I would rather not give you my personnummer. Kan ni hjälpa mig ändå?"
+  },
+  {
+    "id": "ph-07",
+    "style": "short_chat",
+    "tricky": true,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "IBAN replaced by xxxx",
+    "text": "My IBAN is xxxx, can you refund to it?"
+  },
+  {
+    "id": "ph-08",
+    "style": "email",
+    "tricky": true,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "full name, but email and phone removed",
+    "text": "Hello,\n\nPlease update the contact for Anna Svensson. Her email is [removed] and her phone is [removed].\n\nThanks"
+  },
+  {
+    "id": "ph-09",
+    "style": "json_tool",
+    "tricky": true,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "personnummer field holds the format, not a number",
+    "text": "{\"tool\":\"lookup_customer\",\"personnummer\":\"ÅÅMMDD-NNNN\"}"
+  },
+  {
+    "id": "ph-10",
+    "style": "case_note",
+    "tricky": false,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "account number not given",
+    "text": "Kontonummer lämnades inte. Kunden vill ha återbetalningen till samma konto som förra gången."
+  },
+  {
+    "id": "ph-11",
+    "style": "mixed",
+    "tricky": true,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "card number fully masked with stars",
+    "text": "The card number field shows **** **** **** ****. Varför syns inte de sista siffrorna?"
+  },
+  {
+    "id": "ph-12",
+    "style": "short_chat",
+    "tricky": false,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "asks where to send a personnummer",
+    "text": "Ska jag skicka mitt personnummer här i chatten eller ringa in?"
+  },
+  {
+    "id": "ph-13",
+    "style": "short_chat",
+    "tricky": false,
+    "contains_sensitive_pii": true,
+    "pii_type": "government_id",
+    "reason": "government id given",
+    "text": "My governmentid is 900101-1118"
+  },
+  {
+    "id": "ph-14",
+    "style": "short_chat",
+    "tricky": false,
+    "contains_sensitive_pii": true,
+    "pii_type": "government_id",
+    "reason": "twelve-digit personnummer",
+    "text": "Personnummer: 19900101-1118"
+  },
+  {
+    "id": "ph-15",
+    "style": "email",
+    "tricky": false,
+    "contains_sensitive_pii": true,
+    "pii_type": "government_id",
+    "reason": "passport number given",
+    "text": "Hej,\n\nMitt passnummer är AB3901847 enligt er blankett. Räcker det för att höja limiten?\n\nMvh"
+  },
+  {
+    "id": "ph-16",
+    "style": "json_tool",
+    "tricky": false,
+    "contains_sensitive_pii": true,
+    "pii_type": "payment_card",
+    "reason": "card number field with a full number",
+    "text": "{\"tool\":\"block_card\",\"pan\":\"4000 0000 0000 0001\",\"reason\":\"lost\"}"
+  },
+  {
+    "id": "ph-17",
+    "style": "case_note",
+    "tricky": true,
+    "contains_sensitive_pii": true,
+    "pii_type": "government_id",
+    "reason": "template first, then the real personnummer",
+    "text": "Kunden uppgav personnummer 850215-1234 i formuläret efter att först ha skrivit XXXXXX-XXXX."
+  },
+  {
+    "id": "ph-18",
+    "style": "mixed",
+    "tricky": true,
+    "contains_sensitive_pii": true,
+    "pii_type": "government_id",
+    "reason": "says they would rather not, then gives the personnummer",
+    "text": "I would rather not give you my personnummer, men okej: 770412-5512."
+  },
+  {
+    "id": "ph-19",
+    "style": "short_chat",
+    "tricky": false,
+    "contains_sensitive_pii": true,
+    "pii_type": "bank_account",
+    "reason": "IBAN given",
+    "text": "My IBAN is SE45 5000 0000 0583 9825 7466, can you refund to it?"
+  },
+  {
+    "id": "ph-20",
+    "style": "email",
+    "tricky": false,
+    "contains_sensitive_pii": true,
+    "pii_type": "named_contact",
+    "reason": "full name and email",
+    "text": "Hello,\n\nPlease update the contact for Anna Svensson. Her email is anna.svensson@example.com.\n\nThanks"
+  },
+  {
+    "id": "ph-21",
+    "style": "json_tool",
+    "tricky": true,
+    "contains_sensitive_pii": true,
+    "pii_type": "government_id",
+    "reason": "real personnummer next to a note about an earlier redaction",
+    "text": "{\"tool\":\"lookup_customer\",\"personnummer\":\"881130-4455\",\"note\":\"was [REDACTED] in the first request\"}"
+  },
+  {
+    "id": "ph-22",
+    "style": "case_note",
+    "tricky": false,
+    "contains_sensitive_pii": true,
+    "pii_type": "bank_account",
+    "reason": "clearing number and account number",
+    "text": "Kontonummer 8327-9, 914 238 776-1 lämnades för återbetalningen."
+  },
+  {
+    "id": "ph-23",
+    "style": "mixed",
+    "tricky": true,
+    "contains_sensitive_pii": true,
+    "pii_type": "payment_card",
+    "reason": "full card number next to a masked one",
+    "text": "The card number is 5555 4444 3333 2222 men appen visar bara **** **** **** 2222."
+  },
+  {
+    "id": "ph-24",
+    "style": "short_chat",
+    "tricky": false,
+    "contains_sensitive_pii": true,
+    "pii_type": "government_id",
+    "reason": "personnummer given",
+    "text": "Här är mitt personnummer: 920315-7788"
+  }
+]

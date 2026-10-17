@@ -1,0 +1,218 @@
+[
+  {
+    "id": "bn-01",
+    "style": "short_chat",
+    "tricky": true,
+    "contains_sensitive_pii": true,
+    "pii_type": "government_id",
+    "reason": "valid twelve-digit personnummer, described as hypothetical",
+    "text": "This is not sensitive data, but if I add 197306253977 it will be"
+  },
+  {
+    "id": "bn-02",
+    "style": "short_chat",
+    "tricky": true,
+    "contains_sensitive_pii": true,
+    "pii_type": "government_id",
+    "reason": "valid personnummer with no label",
+    "text": "Här är numret: 850709-1232"
+  },
+  {
+    "id": "bn-03",
+    "style": "email",
+    "tricky": true,
+    "contains_sensitive_pii": true,
+    "pii_type": "government_id",
+    "reason": "valid samordningsnummer without a dash, no label",
+    "text": "Hej,\n\nKan ni kolla fakturan för 8907714565? Den borde vara betald.\n\nMvh"
+  },
+  {
+    "id": "bn-04",
+    "style": "json_tool",
+    "tricky": true,
+    "contains_sensitive_pii": true,
+    "pii_type": "government_id",
+    "reason": "valid personnummer in a neutral field",
+    "text": "{\"tool\":\"lookup\",\"ref\":\"19920304-5670\"}"
+  },
+  {
+    "id": "bn-05",
+    "style": "case_note",
+    "tricky": true,
+    "contains_sensitive_pii": true,
+    "pii_type": "government_id",
+    "reason": "valid personnummer in free text with no explanation",
+    "text": "Kunden skrev 011230-7897 i fritextfältet utan förklaring. Ärendet gäller en faktura på 640 kr."
+  },
+  {
+    "id": "bn-06",
+    "style": "mixed",
+    "tricky": true,
+    "contains_sensitive_pii": true,
+    "pii_type": "government_id",
+    "reason": "valid personnummer used as a lookup key",
+    "text": "Please match 730625-3977 against the open invoices, tack."
+  },
+  {
+    "id": "bn-07",
+    "style": "short_chat",
+    "tricky": true,
+    "contains_sensitive_pii": true,
+    "pii_type": "payment_card",
+    "reason": "valid card number with spaces, no label",
+    "text": "Kan ni spärra 4111 1111 1111 1111?"
+  },
+  {
+    "id": "bn-08",
+    "style": "email",
+    "tricky": true,
+    "contains_sensitive_pii": true,
+    "pii_type": "payment_card",
+    "reason": "valid card number with dashes, no label",
+    "text": "Hello,\n\nThe charge came from 5500-0000-0000-0004 on Friday. Please dispute it.\n\nRegards"
+  },
+  {
+    "id": "bn-09",
+    "style": "json_tool",
+    "tricky": true,
+    "contains_sensitive_pii": true,
+    "pii_type": "payment_card",
+    "reason": "valid card number in a neutral field",
+    "text": "{\"tool\":\"refund\",\"source\":\"4000056655665556\",\"amount\":499}"
+  },
+  {
+    "id": "bn-10",
+    "style": "case_note",
+    "tricky": true,
+    "contains_sensitive_pii": true,
+    "pii_type": "payment_card",
+    "reason": "valid 15-digit card number read aloud",
+    "text": "Kunden läste upp 3782 822463 10005 och bad om en återbetalning på 1 200 kr."
+  },
+  {
+    "id": "bn-11",
+    "style": "mixed",
+    "tricky": true,
+    "contains_sensitive_pii": true,
+    "pii_type": "payment_card",
+    "reason": "valid card number without separators",
+    "text": "Use 4242424242424242 for the retry, samma belopp som igår."
+  },
+  {
+    "id": "bn-12",
+    "style": "short_chat",
+    "tricky": true,
+    "contains_sensitive_pii": true,
+    "pii_type": "government_id",
+    "reason": "valid personnummer called a number",
+    "text": "Nummer 920304-5670, vad är min skuld?"
+  },
+  {
+    "id": "bn-13",
+    "style": "short_chat",
+    "tricky": true,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "personnummer shape with a failing check digit",
+    "text": "Please check the invoice for 197306253978"
+  },
+  {
+    "id": "bn-14",
+    "style": "email",
+    "tricky": false,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "OCR number that is not a date",
+    "text": "Hej,\n\nOCR-numret är 9876543210 och beloppet 2 450 kr.\n\nTack"
+  },
+  {
+    "id": "bn-15",
+    "style": "json_tool",
+    "tricky": true,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "sixteen-digit invoice number failing the card check",
+    "text": "{\"tool\":\"invoice_status\",\"invoiceNumber\":\"1234567812345678\"}"
+  },
+  {
+    "id": "bn-16",
+    "style": "case_note",
+    "tricky": false,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "phone number alone",
+    "text": "Kunden ringde från 0739876543 om påminnelseavgiften."
+  },
+  {
+    "id": "bn-17",
+    "style": "mixed",
+    "tricky": true,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "card-shaped order number failing the card check",
+    "text": "Order 4111 1111 1111 1112 was cancelled, inget mer att göra."
+  },
+  {
+    "id": "bn-18",
+    "style": "short_chat",
+    "tricky": false,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "organisation number",
+    "text": "Organisationsnummer 556677-8899, fakturan ska på bolaget."
+  },
+  {
+    "id": "bn-19",
+    "style": "email",
+    "tricky": true,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "personnummer shape with month 13",
+    "text": "Hello,\n\nReference 731325-1234 is on the reminder letter. Is it still open?\n\nRegards"
+  },
+  {
+    "id": "bn-20",
+    "style": "json_tool",
+    "tricky": true,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "ten-digit reference that is not a date",
+    "text": "{\"tool\":\"split_invoice\",\"amount\":3200,\"reference\":\"0761234560\"}"
+  },
+  {
+    "id": "bn-21",
+    "style": "case_note",
+    "tricky": false,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "masked card number",
+    "text": "Kortet visas som **** **** **** 1111 i appen. Kunden vill veta årsavgiften."
+  },
+  {
+    "id": "bn-22",
+    "style": "mixed",
+    "tricky": true,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "phone number with a date-like start that fails the check digit",
+    "text": "Call me on 0701234567 about the invoice, tack."
+  },
+  {
+    "id": "bn-23",
+    "style": "short_chat",
+    "tricky": true,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "phone number that passes the date and check-digit tests",
+    "text": "Ring mig på 0703151506 om fakturan."
+  },
+  {
+    "id": "bn-24",
+    "style": "email",
+    "tricky": false,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "date and short OCR number",
+    "text": "Hej,\n\nFakturadatum 2026-10-12, belopp 1 875 kr, OCR 20261012.\n\nTack"
+  }
+]

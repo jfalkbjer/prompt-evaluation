@@ -1,0 +1,902 @@
+[
+  {
+    "id": "pii-001",
+    "style": "short_chat",
+    "tricky": false,
+    "contains_sensitive_pii": true,
+    "pii_type": "government_id",
+    "reason": "full personnummer",
+    "text": "Hej, varför drogs fakturan två gånger? Mitt personnummer är 900101-1118."
+  },
+  {
+    "id": "pii-002",
+    "style": "short_chat",
+    "tricky": true,
+    "contains_sensitive_pii": true,
+    "pii_type": "payment_card",
+    "reason": "full card number written with spaces",
+    "text": "Kortnumret som krånglar är 5555 4444 3333 2222, kan ni spärra det innan helgen?"
+  },
+  {
+    "id": "pii-003",
+    "style": "short_chat",
+    "tricky": false,
+    "contains_sensitive_pii": true,
+    "pii_type": "payment_card",
+    "reason": "card CVV",
+    "text": "Betalningen stoppades. CVV-koden på baksidan är 737."
+  },
+  {
+    "id": "pii-004",
+    "style": "short_chat",
+    "tricky": false,
+    "contains_sensitive_pii": true,
+    "pii_type": "secret",
+    "reason": "card PIN",
+    "text": "Jag glömde pinkoden. Den är 4821. Kan ni låsa upp kortet?"
+  },
+  {
+    "id": "pii-005",
+    "style": "short_chat",
+    "tricky": false,
+    "contains_sensitive_pii": true,
+    "pii_type": "bank_account",
+    "reason": "clearing number and full account number",
+    "text": "Sätt tillbaka 640 kr på clearing 8124 och konto 394857261."
+  },
+  {
+    "id": "pii-006",
+    "style": "short_chat",
+    "tricky": false,
+    "contains_sensitive_pii": true,
+    "pii_type": "bank_account",
+    "reason": "full IBAN",
+    "text": "Återbetala överskottet till IBAN SE99 0000 0000 0000 0000 0001."
+  },
+  {
+    "id": "pii-007",
+    "style": "short_chat",
+    "tricky": false,
+    "contains_sensitive_pii": true,
+    "pii_type": "secret",
+    "reason": "internet banking password",
+    "text": "Lösenordet till internetbanken är Hostlov2024!, jag kommer inte in."
+  },
+  {
+    "id": "pii-008",
+    "style": "short_chat",
+    "tricky": true,
+    "contains_sensitive_pii": true,
+    "pii_type": "payment_card",
+    "reason": "CVV beside a last-four, so the last-four does not make it safe",
+    "text": "Kortet slutar på 4242 och CVV är 319. Försök igen med samma belopp."
+  },
+  {
+    "id": "pii-009",
+    "style": "short_chat",
+    "tricky": true,
+    "contains_sensitive_pii": true,
+    "pii_type": "named_contact",
+    "reason": "full name together with email",
+    "text": "Kunden Erik Lindqvist, erik.lindqvist@example.com, vill höja krediten med 5 000 kr."
+  },
+  {
+    "id": "pii-010",
+    "style": "short_chat",
+    "tricky": true,
+    "contains_sensitive_pii": true,
+    "pii_type": "government_id",
+    "reason": "samordningsnummer, day number 61",
+    "text": "Samordningsnumret på blanketten är 900161-1118, avtalet gäller delbetalning."
+  },
+  {
+    "id": "pii-011",
+    "style": "short_chat",
+    "tricky": false,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "amount and due date only",
+    "text": "Fakturan på 1 240 kr förfaller den 28 oktober. Kan jag dela upp den?"
+  },
+  {
+    "id": "pii-012",
+    "style": "short_chat",
+    "tricky": true,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "last four digits only",
+    "text": "Spärra kortet som slutar på 4242, jag hittar det inte."
+  },
+  {
+    "id": "pii-013",
+    "style": "short_chat",
+    "tricky": true,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "masked personnummer",
+    "text": "Personnumret i ärendet är maskerat som 900101-****. Kunden vill ha en kopia på avtalet."
+  },
+  {
+    "id": "pii-014",
+    "style": "short_chat",
+    "tricky": true,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "employer organisation number",
+    "text": "Arbetsgivarens organisationsnummer är 559999-0001. Lönen kom inte in i tid."
+  },
+  {
+    "id": "pii-015",
+    "style": "short_chat",
+    "tricky": false,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "ticket id",
+    "text": "Ärende INC-10442 ligger kvar som obetalt. Vad är nästa steg?"
+  },
+  {
+    "id": "pii-016",
+    "style": "short_chat",
+    "tricky": false,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "anonymous product question",
+    "text": "Vad är den rörliga räntan på ett privatlån utan säkerhet just nu?"
+  },
+  {
+    "id": "pii-017",
+    "style": "short_chat",
+    "tricky": true,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "calendar date that resembles a personnummer prefix, no person attached",
+    "text": "Förfallodatumet 1990-01-01 ser fel ut. Fakturan ska gälla oktober 2026."
+  },
+  {
+    "id": "pii-018",
+    "style": "short_chat",
+    "tricky": false,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "merchant and amount",
+    "text": "Köpet hos IKEA på 899 kr har inte synkat till appen."
+  },
+  {
+    "id": "pii-019",
+    "style": "short_chat",
+    "tricky": false,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "first name only",
+    "text": "Alex ringde om påminnelseavgiften. Inget annat namn eller nummer lämnades."
+  },
+  {
+    "id": "pii-020",
+    "style": "short_chat",
+    "tricky": false,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "public rate news",
+    "text": "Riksbanken lämnade styrräntan oförändrad. Påverkar det mina lånevillkor?"
+  },
+  {
+    "id": "pii-021",
+    "style": "email",
+    "tricky": true,
+    "contains_sensitive_pii": true,
+    "pii_type": "government_id",
+    "reason": "personnummer without a dash",
+    "text": "Hej,\n\nJag vill lösa lånet i förtid. Personnummer: 8502151234. Skulden ska vara omkring 18 000 kr.\n\nVänliga hälsningar"
+  },
+  {
+    "id": "pii-022",
+    "style": "email",
+    "tricky": false,
+    "contains_sensitive_pii": true,
+    "pii_type": "bank_account",
+    "reason": "full IBAN in payment instructions",
+    "text": "Hej,\n\nVänligen betala ut 3 200 kr till IBAN SE12 3456 7890 1234 5678 9012 senast på fredag.\n\nTack"
+  },
+  {
+    "id": "pii-023",
+    "style": "email",
+    "tricky": false,
+    "contains_sensitive_pii": true,
+    "pii_type": "named_contact",
+    "reason": "full name and home address",
+    "text": "Hej,\n\nSkicka pappersfakturan till Nora Berg, Storgatan 12, 111 22 Stockholm.\n\nMed vänlig hälsning"
+  },
+  {
+    "id": "pii-024",
+    "style": "email",
+    "tricky": true,
+    "contains_sensitive_pii": true,
+    "pii_type": "secret",
+    "reason": "password buried after a fee dispute",
+    "text": "Hej,\n\nJag bestrider påminnelseavgiften på 60 kr. Första avi:n betalades den 2 september och den andra avi:n på 890 kr är den enda som ska ligga kvar. Köpet gjordes hos Power och varan är en dammsugare. Jag har redan pratat med butiken och de säger att leveransen är kvitterad.\n\nNär jag skulle logga in och ladda upp kvittot stod det tillfälliga lösenordet Höstlöv!99 i brevet ni skickade. Jag vill helst att avgiften stryks utan att jag behöver logga in igen.\n\nHälsningar"
+  },
+  {
+    "id": "pii-025",
+    "style": "email",
+    "tricky": true,
+    "contains_sensitive_pii": true,
+    "pii_type": "payment_card",
+    "reason": "full card number inside a quoted receipt",
+    "text": "Hej,\n\nJag vidarebefordrar kvittot från terminalen:\n\n> Köp 249 kr\n> Kort: 4000000000000001\n> Godkänt\n\nKan ni visa samma rad i appen? Jag ser bara beloppet.\n\nMvh"
+  },
+  {
+    "id": "pii-026",
+    "style": "email",
+    "tricky": false,
+    "contains_sensitive_pii": true,
+    "pii_type": "secret",
+    "reason": "one-time code from SMS",
+    "text": "Hej support,\n\nSms-koden jag fick är 918273. Ska den anges i appen eller på webben?\n\nHälsningar"
+  },
+  {
+    "id": "pii-027",
+    "style": "email",
+    "tricky": false,
+    "contains_sensitive_pii": true,
+    "pii_type": "named_contact",
+    "reason": "full name and phone number",
+    "text": "Hej,\n\nKontakta Maja Holm på 070-123 45 67 så hon kan bekräfta autogirot innan nästa dragning.\n\nTack"
+  },
+  {
+    "id": "pii-028",
+    "style": "email",
+    "tricky": false,
+    "contains_sensitive_pii": true,
+    "pii_type": "government_id",
+    "reason": "passport number in a KYC note",
+    "text": "Hej,\n\nI KYC-underlaget står passnummer AB3901847. Räcker det för att höja limiten med 10 000 kr?\n\nMvh"
+  },
+  {
+    "id": "pii-029",
+    "style": "email",
+    "tricky": false,
+    "contains_sensitive_pii": true,
+    "pii_type": "bank_account",
+    "reason": "clearing number and full account number",
+    "text": "Hej,\n\nÅterbetalningen ska till clearingnummer 5571 och kontonummer 220198347.\n\nVänliga hälsningar"
+  },
+  {
+    "id": "pii-030",
+    "style": "email",
+    "tricky": true,
+    "contains_sensitive_pii": true,
+    "pii_type": "secret",
+    "reason": "recovery code late in a thread",
+    "text": "Hej,\n\nTack för svaret om fakturan på 1 875 kr. Jag hittar inte betalningen från i måndags och vill att ni stämmer av mot butikens dagsavslut innan ni skickar kravet vidare.\n\nPå kuvertet som kom med kortet står återställningskoden K7M-22P-QQ9. Ska jag använda den om appen ber om ett nytt lösenord, eller gäller den bara första inloggningen?\n\nVänliga hälsningar"
+  },
+  {
+    "id": "pii-031",
+    "style": "email",
+    "tricky": false,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "fee dispute without identifiers",
+    "text": "Hej,\n\nJag bestrider påminnelseavgiften på 60 kr. Avi:n på 890 kr betalades samma dag som den förföll, och köpet hos Power är redan levererat. Vänligen stryk avgiften och bekräfta den öppna skulden.\n\nHälsningar"
+  },
+  {
+    "id": "pii-032",
+    "style": "email",
+    "tricky": true,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "last four digits in a travel dispute",
+    "text": "Hej,\n\nKortet som slutar på 1881 användes i Göteborg enligt specifikationen. Jag var i Malmö den dagen. Beloppet är 640 kr hos en okänd handlare. Vänligen bestrid raden.\n\nMvh"
+  },
+  {
+    "id": "pii-033",
+    "style": "email",
+    "tricky": true,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "organisation number on a company invoice",
+    "text": "Hej,\n\nFakturan är ställd till ett företag, inte till mig som privatperson. Organisationsnummer 559123-4560. Beloppet 6 400 kr ska omföras. Tack."
+  },
+  {
+    "id": "pii-034",
+    "style": "email",
+    "tricky": false,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "short OCR reference and amount",
+    "text": "Hej,\n\nOCR-numret på avi:n är 847362910. Beloppet är 2 450 kr och förfaller den 28 oktober.\n\nTack"
+  },
+  {
+    "id": "pii-035",
+    "style": "email",
+    "tricky": false,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "ticket id only",
+    "text": "Hej,\n\nVi hänvisar till ärende TCK-88311. Ingen ytterligare uppgift behövs för att se status på delbetalningen.\n\nVänliga hälsningar"
+  },
+  {
+    "id": "pii-036",
+    "style": "email",
+    "tricky": false,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "anonymous product question",
+    "text": "Hej,\n\nKan man betala en faktura i tre delar utan extra ränta, eller tillkommer en uppläggningsavgift från andra delen?\n\nTack"
+  },
+  {
+    "id": "pii-037",
+    "style": "email",
+    "tricky": true,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "invoice dates in 1985, not a date of birth",
+    "text": "Hej,\n\nFakturadatum 1985-02-15 och förfallo 1985-03-15 verkar vara ett testärende, inte ett verkligt köp. Belopp 0 kr. Kan ni ta bort raden?\n\nMvh"
+  },
+  {
+    "id": "pii-038",
+    "style": "email",
+    "tricky": false,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "merchant, date and amount",
+    "text": "Hej,\n\nKöpet på Clas Ohlson den 14 september, 349 kr, saknas på specifikationen. Övriga rader för veckan stämmer.\n\nMvh"
+  },
+  {
+    "id": "pii-039",
+    "style": "email",
+    "tricky": true,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "masked card number",
+    "text": "Hej,\n\nKortet visas som **** **** **** 4242 i appen. Stämmer årsavgiften på 195 kr, eller ska den vara 0 kr första året?\n\nTack"
+  },
+  {
+    "id": "pii-040",
+    "style": "email",
+    "tricky": false,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "public company news",
+    "text": "Hej,\n\nJag läste att Volvo Cars redovisade ett starkt kvartal. Påverkar det ert bolånserbjudande, eller är räntan densamma oavsett?\n\nTack"
+  },
+  {
+    "id": "pii-041",
+    "style": "json_tool",
+    "tricky": true,
+    "contains_sensitive_pii": true,
+    "pii_type": "government_id",
+    "reason": "personnummer field",
+    "text": "{\"tool\":\"lookup_customer\",\"personnummer\":\"950712-9991\",\"topic\":\"invoice\"}"
+  },
+  {
+    "id": "pii-042",
+    "style": "json_tool",
+    "tricky": true,
+    "contains_sensitive_pii": true,
+    "pii_type": "payment_card",
+    "reason": "full card number in a pan field",
+    "text": "{\"tool\":\"block_card\",\"pan\":\"6221260000000004\",\"reason\":\"lost\"}"
+  },
+  {
+    "id": "pii-043",
+    "style": "json_tool",
+    "tricky": false,
+    "contains_sensitive_pii": true,
+    "pii_type": "payment_card",
+    "reason": "CVV field",
+    "text": "{\"tool\":\"retry_payment\",\"amount\":499,\"currency\":\"SEK\",\"cvv\":\"737\"}"
+  },
+  {
+    "id": "pii-044",
+    "style": "json_tool",
+    "tricky": false,
+    "contains_sensitive_pii": true,
+    "pii_type": "bank_account",
+    "reason": "IBAN field",
+    "text": "{\"tool\":\"payout\",\"amount\":1500,\"currency\":\"SEK\",\"iban\":\"SE9900000000000000000001\"}"
+  },
+  {
+    "id": "pii-045",
+    "style": "json_tool",
+    "tricky": false,
+    "contains_sensitive_pii": true,
+    "pii_type": "secret",
+    "reason": "password field",
+    "text": "{\"tool\":\"reset_access\",\"channel\":\"web\",\"password\":\"Vinter2024!\"}"
+  },
+  {
+    "id": "pii-046",
+    "style": "json_tool",
+    "tricky": true,
+    "contains_sensitive_pii": true,
+    "pii_type": "named_contact",
+    "reason": "full name and email fields",
+    "text": "{\"tool\":\"update_contact\",\"fullName\":\"Sara Ek\",\"email\":\"sara.ek@example.com\",\"product\":\"card\"}"
+  },
+  {
+    "id": "pii-047",
+    "style": "json_tool",
+    "tricky": false,
+    "contains_sensitive_pii": true,
+    "pii_type": "named_contact",
+    "reason": "full name and phone fields",
+    "text": "{\"tool\":\"callback\",\"fullName\":\"Jonas Bergström\",\"phone\":\"073-555 01 92\",\"topic\":\"loan\"}"
+  },
+  {
+    "id": "pii-048",
+    "style": "json_tool",
+    "tricky": false,
+    "contains_sensitive_pii": true,
+    "pii_type": "secret",
+    "reason": "one-time code field",
+    "text": "{\"tool\":\"confirm_login\",\"otp\":\"004812\"}"
+  },
+  {
+    "id": "pii-049",
+    "style": "json_tool",
+    "tricky": false,
+    "contains_sensitive_pii": true,
+    "pii_type": "named_contact",
+    "reason": "full name and home address fields",
+    "text": "{\"tool\":\"mail_statement\",\"fullName\":\"Leila Nordin\",\"address\":\"Strandvägen 8, 211 20 Malmö\"}"
+  },
+  {
+    "id": "pii-050",
+    "style": "json_tool",
+    "tricky": true,
+    "contains_sensitive_pii": true,
+    "pii_type": "secret",
+    "reason": "PIN next to a last-four",
+    "text": "{\"tool\":\"unblock_card\",\"last4\":\"9090\",\"pin\":\"7712\"}"
+  },
+  {
+    "id": "pii-051",
+    "style": "json_tool",
+    "tricky": false,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "amount and installment count",
+    "text": "{\"tool\":\"split_invoice\",\"amount\":3200,\"currency\":\"SEK\",\"parts\":3}"
+  },
+  {
+    "id": "pii-052",
+    "style": "json_tool",
+    "tricky": true,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "last four digits only",
+    "text": "{\"tool\":\"identify_card\",\"last4\":\"4242\",\"network\":\"visa\"}"
+  },
+  {
+    "id": "pii-053",
+    "style": "json_tool",
+    "tricky": true,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "masked personnummer field",
+    "text": "{\"tool\":\"lookup\",\"personnummer\":\"900101-****\"}"
+  },
+  {
+    "id": "pii-054",
+    "style": "json_tool",
+    "tricky": true,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "organisation number field",
+    "text": "{\"tool\":\"verify_employer\",\"organisationNumber\":\"559999-0001\"}"
+  },
+  {
+    "id": "pii-055",
+    "style": "json_tool",
+    "tricky": false,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "ticket id",
+    "text": "{\"tool\":\"get_case\",\"ticketId\":\"INC-10442\"}"
+  },
+  {
+    "id": "pii-056",
+    "style": "json_tool",
+    "tricky": false,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "anonymous loan quote",
+    "text": "{\"tool\":\"quote_loan\",\"product\":\"privatlan\",\"amount\":50000,\"termMonths\":60}"
+  },
+  {
+    "id": "pii-057",
+    "style": "json_tool",
+    "tricky": true,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "invoice date that looks like a birth date, no person",
+    "text": "{\"tool\":\"correct_invoice\",\"invoiceDate\":\"1990-01-01\",\"amount\":0}"
+  },
+  {
+    "id": "pii-058",
+    "style": "json_tool",
+    "tricky": false,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "internal customer id",
+    "text": "{\"tool\":\"open_case\",\"customerId\":\"CUST-100\",\"reason\":\"duplicate_charge\"}"
+  },
+  {
+    "id": "pii-059",
+    "style": "json_tool",
+    "tricky": false,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "merchant dispute",
+    "text": "{\"tool\":\"dispute\",\"merchant\":\"ICA Kvantum\",\"amount\":86.5,\"currency\":\"SEK\"}"
+  },
+  {
+    "id": "pii-060",
+    "style": "json_tool",
+    "tricky": false,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "invoice number and status",
+    "text": "{\"tool\":\"invoice_status\",\"invoiceNumber\":\"INV-2026-1044\",\"status\":\"unpaid\",\"due\":\"2026-10-28\"}"
+  },
+  {
+    "id": "pii-061",
+    "style": "case_note",
+    "tricky": true,
+    "contains_sensitive_pii": true,
+    "pii_type": "government_id",
+    "reason": "personnummer buried in a long servicing note",
+    "text": "Samtal 12 minuter om en förfallen delbetalning. Kunden uppger att första avi:n på 890 kr betalades den 3 september, men att den andra avi:n på 890 kr fortfarande ligger öppen. Handläggaren föreslog att flytta förfallodatum en vecka och att ta bort påminnelseavgiften på 60 kr om betalningen syns inom fem dagar. Kunden uppgav personnummer 670923-4321 när avtalet tecknades i butik. Resterande skuld enligt kontospegeln är 4 450 kr och nästa dragning är planerad till den 28:e. Ingen annan tvist om varan, en dammsugare från Power, togs upp. Rekommendation: godkänn avgiftsbefrielse och skicka en skriftlig plan. Kunden vill ha planen i appen, inte som brev, och frågade också om räntan på kvarvarande skuld ändras när avgiften stryks. Den gör den inte. Notera att butiken redan kvitterat leveransen, så ärendet ska inte klassas som reklamation."
+  },
+  {
+    "id": "pii-062",
+    "style": "case_note",
+    "tricky": false,
+    "contains_sensitive_pii": true,
+    "pii_type": "bank_account",
+    "reason": "IBAN in a payout note",
+    "text": "Utbetalning av överskott 3 200 kr. Kunden vill att beloppet går till IBAN SE12 3456 7890 1234 5678 9012 i stället för att kvittas mot nästa faktura. Ingen tvist om köpet."
+  },
+  {
+    "id": "pii-063",
+    "style": "case_note",
+    "tricky": false,
+    "contains_sensitive_pii": true,
+    "pii_type": "named_contact",
+    "reason": "full name and home address",
+    "text": "Pappersavi begärd. Mottagare Nora Berg, Storgatan 12, 111 22 Stockholm. Gäller faktura på 1 240 kr med förfallo 28 oktober."
+  },
+  {
+    "id": "pii-064",
+    "style": "case_note",
+    "tricky": true,
+    "contains_sensitive_pii": true,
+    "pii_type": "payment_card",
+    "reason": "full card number in the middle of a dispute note",
+    "text": "Korttvist efter en resa. Kunden såg tre rader den 14 september: 86 kr på ICA, 349 kr på Clas Ohlson och en okänd rad på 640 kr. De två första känns igen. Den tredje vill kunden bestrida eftersom den bokfördes sent på kvällen och orten inte stämmer med resan. I terminalunderlaget som klistrades in står kortnummer 4000000000000001 på den okända raden. Övriga rader i veckan är redan avstämda. Rekommendation: öppna bestridande på 640 kr och lämna de kända köpen orörda. Ingen höjning av kreditgränsen diskuterades."
+  },
+  {
+    "id": "pii-065",
+    "style": "case_note",
+    "tricky": false,
+    "contains_sensitive_pii": true,
+    "pii_type": "secret",
+    "reason": "card PIN",
+    "text": "Kortet är spärrat efter tre felaktiga försök. Kunden läste upp pinkoden 9055 och bad oss låsa upp innan lördagens köp. Beloppet som skulle dras är 220 kr."
+  },
+  {
+    "id": "pii-066",
+    "style": "case_note",
+    "tricky": false,
+    "contains_sensitive_pii": true,
+    "pii_type": "secret",
+    "reason": "portal password",
+    "text": "Kunden kommer inte in i webbanken och uppgav lösenordet Hostlov2024! i chatten. Be kunden byta det. Ärendet i övrigt gäller en faktura på 2 450 kr."
+  },
+  {
+    "id": "pii-067",
+    "style": "case_note",
+    "tricky": true,
+    "contains_sensitive_pii": true,
+    "pii_type": "named_contact",
+    "reason": "full name and date of birth",
+    "text": "Låntagaren heter Omar Said och är född 1990-03-14. Han vill lösa ett lån på 22 000 kr i förtid. Inga andra kontaktuppgifter noterades. Räkna fram lösenbelopp per den 28 oktober och återkom med en avi utan att ändra autogirot förrän kunden bekräftat."
+  },
+  {
+    "id": "pii-068",
+    "style": "case_note",
+    "tricky": false,
+    "contains_sensitive_pii": true,
+    "pii_type": "government_id",
+    "reason": "driver's license number",
+    "text": "KYC-komplettering. Körkortsnummer Y12345678 lämnades för att höja kreditgränsen med 10 000 kr. Inget beslut fattat."
+  },
+  {
+    "id": "pii-069",
+    "style": "case_note",
+    "tricky": false,
+    "contains_sensitive_pii": true,
+    "pii_type": "secret",
+    "reason": "one-time code read aloud",
+    "text": "Kunden fastnade i inloggningen och läste upp engångskoden 918273. Koden ska inte sparas i ärendet. Frågan i övrigt var om delbetalning i tre delar kostar extra."
+  },
+  {
+    "id": "pii-070",
+    "style": "case_note",
+    "tricky": true,
+    "contains_sensitive_pii": true,
+    "pii_type": "bank_account",
+    "reason": "full account number split by spaces",
+    "text": "Återbetalning 640 kr. Clearing 8124, konto 39 48 57 261. Kunden vill ha beloppet på kontot i stället för som avdrag på nästa avi."
+  },
+  {
+    "id": "pii-071",
+    "style": "case_note",
+    "tricky": false,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "long underwriting note with amounts only",
+    "text": "Kreditprövning utan identifierande uppgifter, endast produkt och ekonomi på aggregerad nivå. Sökt belopp 80 000 kr, önskad löptid 8 år, månadsbetalning enligt schablon 1 150 kr. Sökanden beskriver anställning sedan fyra år inom handel, ingen specifik arbetsgivare namnges i den här noteringen. Boendekostnad uppgiven till 7 200 kr i månaden och övriga krediter till 1 100 kr. Inga betalningsanmärkningar enligt den interna sammanfattningen. Ärendet rekommenderas vidare till manuell bedömning eftersom skuldkvoten ligger nära internt tak. Ingen kontaktuppgift, inget kort och inget kontonummer finns i underlaget som skickas vidare. Beslut väntas inom två arbetsdagar. Handläggaren ska endast kommunicera villkor, ränta och avgifter, och inte be om fler uppgifter i det här steget."
+  },
+  {
+    "id": "pii-072",
+    "style": "case_note",
+    "tricky": true,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "last four digits buried in a long dispute note",
+    "text": "Korttvist, andra kontakten den här veckan. Kunden rest genom Göteborg och Malmö och ser en rad på 640 kr som inte känns igen, bokförd sent den 14 september. De kända köpen samma vecka är 86 kr och 349 kr och ska lämnas orörda. Det registrerade kortet slutar på 9090 och kunden har det fysiskt hemma, så det är inte anmält stulet. Rekommendation: bestrid endast den okända raden och skicka en tillfällig specifikation utan att spärra kortet. Kreditgränsen är oförändrad och ingen avgift ska läggas på under tiden utredningen pågår. Återkoppling önskas inom fem arbetsdagar."
+  },
+  {
+    "id": "pii-073",
+    "style": "case_note",
+    "tricky": true,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "employer organisation number in a long note",
+    "text": "Löneavi saknas och kunden undrar om autogirot därför stoppas. Anställningen beskrivs som tillsvidare inom handel. Arbetsgivarens organisationsnummer är 559123-4560, lämnat för att vi ska kunna se att fakturan borde gått till företaget och inte bokföras som ett privatköp. Belopp 6 400 kr, förfallo nästa månad. Ingen personidentifierare finns i noteringen. Rekommendation: omför raden och bekräfta skriftligt att påminnelseavgift inte ska läggas på under omföringen."
+  },
+  {
+    "id": "pii-074",
+    "style": "case_note",
+    "tricky": true,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "application date that looks like a birth date",
+    "text": "Testärende i fakturasystemet. Ansökan registrerades 1985-02-15 och förfallodatum sattes till 1985-03-15, vilket är ett datumfel och inte ett köp. Belopp 0 kr. Raden kan raderas utan krav. Inget namn och inget kort är knutet till posten."
+  },
+  {
+    "id": "pii-075",
+    "style": "case_note",
+    "tricky": false,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "ticket and queue only",
+    "text": "Ärende TCK-88311 ligger i kön för delbetalning. Väntetid två dagar. Ingen komplettering begärd."
+  },
+  {
+    "id": "pii-076",
+    "style": "case_note",
+    "tricky": false,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "product terms",
+    "text": "Fråga om privatlån utan säkerhet. Kunden vill veta skillnaden mellan rörlig ränta och en kampanjränta på 60 månader för 50 000 kr, och om uppläggningsavgift tillkommer när fakturan delas i tre. Inget avtal tecknat."
+  },
+  {
+    "id": "pii-077",
+    "style": "case_note",
+    "tricky": false,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "masked card in a servicing note",
+    "text": "Årsavgift 195 kr ifrågasätts. Kortet visas i appen som **** **** **** 4242. Första året ska avgiften vara 0 kr enligt det kampanjvillkor kunden beskriver. Kontrollera villkoret och återkoppla utan att be om fler kortuppgifter."
+  },
+  {
+    "id": "pii-078",
+    "style": "case_note",
+    "tricky": false,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "merchant dispute",
+    "text": "Bestridande av 86,50 kr hos ICA Kvantum. Varan returnerades samma dag och kvitto på returen finns i appen. Övriga rader i september stämmer."
+  },
+  {
+    "id": "pii-079",
+    "style": "case_note",
+    "tricky": true,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "first name only inside a longer note",
+    "text": "Alex ringde om påminnelseavgiften på 60 kr och menar att avi:n på 890 kr betalades i tid. Inget efternamn, inget telefonnummer och ingen adress lämnades. Handläggaren lovade att kontrollera bokningen mot den 3 september och återkomma i appen. Om betalningen syns ska avgiften strykas. Inget kort och inget avtalnummer utöver ärendets köplats diskuterades."
+  },
+  {
+    "id": "pii-080",
+    "style": "case_note",
+    "tricky": false,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "public rate discussion",
+    "text": "Kunden frågar om Riksbankens senaste räntebesked ändrar villkoret på ett befintligt privatlån. Svaret är att rörlig ränta följer villkoren i avtalet och att ett offentligt räntebesked inte i sig ändrar en fast kampanjperiod. Inga personuppgifter i frågan."
+  },
+  {
+    "id": "pii-081",
+    "style": "mixed",
+    "tricky": true,
+    "contains_sensitive_pii": true,
+    "pii_type": "government_id",
+    "reason": "twelve-digit personnummer in a bilingual message",
+    "text": "Hi, I need the installment plan updated. Mitt personnummer är 198806307777 and the October invoice is 2 100 kr."
+  },
+  {
+    "id": "pii-082",
+    "style": "mixed",
+    "tricky": true,
+    "contains_sensitive_pii": true,
+    "pii_type": "payment_card",
+    "reason": "full card number with dashes",
+    "text": "Please block this card before Friday: 1234-5678-9012-3456. Det används inte längre och kreditgränsen ska vara oförändrad."
+  },
+  {
+    "id": "pii-083",
+    "style": "mixed",
+    "tricky": true,
+    "contains_sensitive_pii": true,
+    "pii_type": "named_contact",
+    "reason": "full name and email in a bilingual request",
+    "text": "Update the contact on the card account. Full name Leila Nordin, email leila.nordin@example.com. She asked for the statement in Swedish."
+  },
+  {
+    "id": "pii-084",
+    "style": "mixed",
+    "tricky": false,
+    "contains_sensitive_pii": true,
+    "pii_type": "payment_card",
+    "reason": "CVV called a security code",
+    "text": "The payment failed. Security code / CVV is 319. Same amount, 499 kr, please retry."
+  },
+  {
+    "id": "pii-085",
+    "style": "mixed",
+    "tricky": false,
+    "contains_sensitive_pii": true,
+    "pii_type": "bank_account",
+    "reason": "IBAN in an English payout instruction",
+    "text": "Please pay the 3 200 kr surplus to IBAN SE12 3456 7890 1234 5678 9012 instead of netting it against the next invoice."
+  },
+  {
+    "id": "pii-086",
+    "style": "mixed",
+    "tricky": false,
+    "contains_sensitive_pii": true,
+    "pii_type": "secret",
+    "reason": "password in a bilingual login issue",
+    "text": "I cannot sign in to the web bank. Lösenordet är Vinter2024! and the invoice I wanted to open is 2 450 kr."
+  },
+  {
+    "id": "pii-087",
+    "style": "mixed",
+    "tricky": false,
+    "contains_sensitive_pii": true,
+    "pii_type": "named_contact",
+    "reason": "full name and phone number",
+    "text": "Please call Jonas Bergström on 073-555 01 92 about the loan payoff. Han vill lösa lånet den 28 oktober."
+  },
+  {
+    "id": "pii-088",
+    "style": "mixed",
+    "tricky": true,
+    "contains_sensitive_pii": true,
+    "pii_type": "government_id",
+    "reason": "samordningsnummer in a bilingual KYC line",
+    "text": "KYC form uses a samordningsnummer, not a personnummer: 850275-1234. The requested limit increase is 10 000 kr."
+  },
+  {
+    "id": "pii-089",
+    "style": "mixed",
+    "tricky": false,
+    "contains_sensitive_pii": true,
+    "pii_type": "secret",
+    "reason": "one-time code",
+    "text": "The one-time code from the SMS is 004812. Should I enter it on the web or in the app?"
+  },
+  {
+    "id": "pii-090",
+    "style": "mixed",
+    "tricky": false,
+    "contains_sensitive_pii": true,
+    "pii_type": "bank_account",
+    "reason": "full account number in a bilingual refund",
+    "text": "Refund 640 kr to clearing 5571, account 220198347. Do not post it as a credit on the next invoice."
+  },
+  {
+    "id": "pii-091",
+    "style": "mixed",
+    "tricky": false,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "bilingual product question",
+    "text": "Can I split an invoice into three parts utan extra ränta? The amount would be about 2 450 kr."
+  },
+  {
+    "id": "pii-092",
+    "style": "mixed",
+    "tricky": true,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "last four digits described as ending in",
+    "text": "The card ending in 1881 was used in Göteborg according to the app. I was in Malmö. Please dispute 640 kr."
+  },
+  {
+    "id": "pii-093",
+    "style": "mixed",
+    "tricky": true,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "masked personnummer in a bilingual note",
+    "text": "The personnummer on the case is masked, 900101-****. Customer wants a copy of the agreement, nothing else."
+  },
+  {
+    "id": "pii-094",
+    "style": "mixed",
+    "tricky": true,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "company registration number",
+    "text": "This invoice should be on the company, organisation number 559123-4560, not on a private account. Amount 6 400 kr."
+  },
+  {
+    "id": "pii-095",
+    "style": "mixed",
+    "tricky": false,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "ticket id",
+    "text": "Following up on ticket TCK-88311. What is the status of the installment request?"
+  },
+  {
+    "id": "pii-096",
+    "style": "mixed",
+    "tricky": false,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "amount and currency only",
+    "text": "The open balance is 4 450 kr. Can the next draw stay on the 28th?"
+  },
+  {
+    "id": "pii-097",
+    "style": "mixed",
+    "tricky": true,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "invoice date in 1990 with no person attached",
+    "text": "Invoice date 1990-01-01 looks like a test row. Amount 0 kr. Please delete it, there is no customer on the row."
+  },
+  {
+    "id": "pii-098",
+    "style": "mixed",
+    "tricky": false,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "public company fact",
+    "text": "Volvo Cars reported a strong quarter. Does that change your unsecured loan rate, or is the price list unchanged?"
+  },
+  {
+    "id": "pii-099",
+    "style": "mixed",
+    "tricky": false,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "invoice number",
+    "text": "Invoice INV-2026-1044 is still unpaid in the app. Due date 28 October. I already scheduled the payment."
+  },
+  {
+    "id": "pii-100",
+    "style": "mixed",
+    "tricky": false,
+    "contains_sensitive_pii": false,
+    "pii_type": "none",
+    "reason": "interest question without identifiers",
+    "text": "What is the variable rate on a 50 000 kr personal loan over 60 months, and is there a setup fee?"
+  }
+]

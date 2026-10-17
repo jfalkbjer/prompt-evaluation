@@ -1,0 +1,4 @@
+.cache/
+results/
+duckdb/*.duckdb
+duckdb/*.duckdb.wal
